@@ -8,35 +8,29 @@
     </head>
     <body>
         <div class="container">
-            <!-- Column explicit -->
             <div class="item">1</div>
             <div class="item">2</div>
-            <div class="item">3</div>
-            <div class="item">4</div>
-
-            <!-- Row explicit-->
-            <!-- <div class="item">5</div>
-            <div class="item">6</div> -->
             
-            <!-- Row auto -->
-            <!-- <div class="item">7</div>
+            <!-- <div class="item">3</div> -->
+        
+            <!-- <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
             <div class="item">8</div> -->
         </div>
         <style>
             .container {
                 display: grid;
                 grid-gap: 20px;
-                
-                /* Column explicit */
-                grid-template-columns: 200px 400px;
 
-                /* Row explicit */
-                /* grid-template-rows: 50px 100px; */
+                /* Auto flow */
+                /* grid-template-columns: 400px 200px; */
 
-                /* Row auto */
-                /* grid-auto-rows: 100px; */
+                /* Auto flow (column, row, dense)*/
+                /* grid-auto-flow: column; */
 
-                /* Column auto */
+                /* Auto column */
                 /* grid-auto-columns: 100px; */
             }
         </style>
