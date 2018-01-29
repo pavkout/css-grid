@@ -1,0 +1,16 @@
+{
+  "name": "css-grid",
+  "version": "1.0.0",
+  "description": "CSS Grid",
+  "main": "index.js",
+  "repository": "https://github.com/pavkout/css-grid",
+  "author": "Pavlos Koutoglou",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js' --directory --port 7777 --browser 'FirefoxDeveloperEdition'"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.23.6"
+  }
+}
