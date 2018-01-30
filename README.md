@@ -3,7 +3,7 @@
 
 # CSS Grid Layout
 
-[FIREFOX DEVTOOLS PLAYGROUND](https://mozilladevelopers.github.io/playground/)
+[CSS GRID PLAYGROUND](https://www.cssgridplayground.com/)
 
 Learn, build, improve, and create with Firefox DevTools.
 
