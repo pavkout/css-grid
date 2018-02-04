@@ -8,82 +8,49 @@
     </head>
     <body>
         <div class="container">
-            <div class="item item1">1</div>
-            <div class="item item2">2</div>
-            <div class="item item3">3</div>
-            <div class="item item4">4</div>
-            <div class="item item5">5</div>
-            <div class="item item6">6</div>
-            <div class="item item7">7</div>
-            <div class="item item8">8</div>
-            <div class="item item9">9</div>
-            <div class="item item10">10</div>
-            <div class="item item11">11</div>
-            <div class="item item12">12</div>
-            <div class="item item13">13</div>
-            <div class="item item14">14</div>
-            <div class="item item15">15</div>
-            <div class="item item16">16</div>
-            <div class="item item17">17</div>
-            <div class="item item18">18</div>
-            <div class="item item19">19</div>
-            <div class="item item20">20</div>
-            <div class="item item21">21</div>
-            <div class="item item22">22</div>
-            <div class="item item23">23</div>
-            <div class="item item24">24</div>
-            <div class="item item25">25</div>
-            <div class="item item26">26</div>
-            <div class="item item27">27</div>
-            <div class="item item28">28</div>
-            <div class="item item29">29</div>
-            <div class="item item30">30</div>
+            <div class="item item1">Item 1</div>
+            <div class="item item2">Item 2</div>
+            <!-- <div class="item item2">Ordereze</div> -->
+            <div class="item item3">Item 3</div>
+            <div class="item item4">Item 4</div>
+            <div class="item item5">Item 5</div>
+            <div class="item item6">Item 6</div>
+            <div class="item item7">Item 7</div>
+            <div class="item item8">Item 8</div>
+            <div class="item item9">Item 9</div>
+            <div class="item item10">Item 10</div>
+            <div class="item item11">Item 11</div>
+            <div class="item item12">Item 12</div>
+            <div class="item item13">Item 13</div>
+            <div class="item item14">Item 14</div>
+            <div class="item item15">Item 15</div>
+            <div class="item item16">Item 16</div>
+            <div class="item item17">Item 17</div>
+            <div class="item item18">Item 18</div>
+            <div class="item item19">Item 19</div>
+            <div class="item item20">Item 20</div>
         </div>
         <style>
             .container {
                 display: grid;
                 grid-gap: 20px;
-                /* Make the grid 10 columns wide, every other taking up twice the free space */
-                /* grid-template-columns: repeat(5, 1fr 2fr); */
-                /* Make the grid have 10 explicit rows, 50px high each */
-                /* grid-template-rows: repeat(10, 50px); */
+                border: 5px solid #ffc600;
+                /* grid-template-columns: repeat(auto-fill, 150px); */
+                /* grid-template-columns: repeat(auto-fit, 150px); */
+                
+                /* minmax */
+                /* grid-template-columns: repeat(auto-fill, 100px);
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
+
+                /* fit-content */
+                /* grid-template-columns: fit-content(100px) 150px 150px 150px; */
             }
-            
-            /* With Item 1, start at col 3 and go until 5 */
-            /* .item1 {
-                grid-column: 3 / 5;
+
+            /* .item4 {
+                grid-column-end: -1;
             } */
-            
-            /* With Item 2, start at col 5 and go until the end */
-            /* .item2 {
-                grid-column: 5 / -1;
-            } */
-            
-            /* Make Item 5 double span 2 cols and rows */
-            /* .item5 {
-                grid-column: span 2;
-                grid-row: span 2;
-            } */
-            
-            /* Make Item 8 two rows high */
-            /* .item8 {
-                grid-row: span 2;
-            } */
-            
-            /* Make Item 15 span the entire grid width */
-            /* .item15 {
-                grid-column: 1 / -1;
-            } */
-            
-            /* Make item 18 span 4 widths, but end 9 */
-            /* .item18 {
-                grid-column: span 4 / 9;
-            } */
-           
-            /* Make item 20 start at row 4 and go for 3 */
-            /* .item20 {
-                grid-row: 4 / span 3;
-            } */
+
         </style>
     </body>
 </html>
