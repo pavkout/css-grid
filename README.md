@@ -7,6 +7,9 @@
 
 Learn, build, improve, and create with Firefox DevTools.
 
+### Documentation
+Here is the [Full Documentation](https://css-tricks.com/snippets/css/complete-guide-grid/)
+
 ### Browser Support
 Before we can dive more into Grid Layout, it’s good to know the status of [browser support](https://caniuse.com/#feat=css-grid), and how we can enable this feature in current browsers.
 
