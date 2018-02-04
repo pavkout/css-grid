@@ -8,49 +8,56 @@
     </head>
     <body>
         <div class="container">
-            <div class="item item1">Item 1</div>
-            <div class="item item2">Item 2</div>
-            <!-- <div class="item item2">Ordereze</div> -->
-            <div class="item item3">Item 3</div>
-            <div class="item item4">Item 4</div>
-            <div class="item item5">Item 5</div>
-            <div class="item item6">Item 6</div>
-            <div class="item item7">Item 7</div>
-            <div class="item item8">Item 8</div>
-            <div class="item item9">Item 9</div>
-            <div class="item item10">Item 10</div>
-            <div class="item item11">Item 11</div>
-            <div class="item item12">Item 12</div>
-            <div class="item item13">Item 13</div>
-            <div class="item item14">Item 14</div>
-            <div class="item item15">Item 15</div>
-            <div class="item item16">Item 16</div>
-            <div class="item item17">Item 17</div>
-            <div class="item item18">Item 18</div>
-            <div class="item item19">Item 19</div>
-            <div class="item item20">Item 20</div>
+            <div class="item item1">
+                <p>I'm Sidebar #1</p>
+            </div>
+            <div class="item item2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, sed.</p>
+                <p>Lorem ipsum d</p>
+            </div>
+            <div class="item item3">
+                <p>I'm Sidebar #2</p>
+            </div>
+            <div class="item footer">
+                <p>I'm the footer</p>
+            </div>
         </div>
         <style>
             .container {
                 display: grid;
                 grid-gap: 20px;
-                border: 5px solid #ffc600;
-                /* grid-template-columns: repeat(auto-fill, 150px); */
-                /* grid-template-columns: repeat(auto-fit, 150px); */
-                
-                /* minmax */
-                /* grid-template-columns: repeat(auto-fill, 100px);
-                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
-
-                /* fit-content */
-                /* grid-template-columns: fit-content(100px) 150px 150px 150px; */
+                /* grid-template-columns: 1fr 10fr 1fr;
+                grid-template-rows: 150px 150px 100px;
+                grid-template-areas: 
+                    "sidebar-1 content sidebar-2"
+                    "sidebar-1 content sidebar-2"
+                    "footer footer footer" */
             }
 
-            /* .item4 {
-                grid-column-end: -1;
-            } */
+            /* .footer {
+                grid-area: footer;
+            }
 
+            .item1 {
+                grid-area: sidebar-1;
+            }
+    
+            .item2 {
+                grid-area: content;
+            }
+    
+            .item3 {
+                grid-area: sidebar-2;
+            }
+
+            @media (max-width: 700px) {
+                .container {
+                    grid-template-areas: 
+                    "content content content"
+                    "sidebar-1 sidebar-1 sidebar-2"
+                    "footer footer footer"
+                }
+            } */
         </style>
     </body>
 </html>
