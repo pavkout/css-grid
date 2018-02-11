@@ -4,183 +4,110 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <link rel="stylesheet" href="./assets/style.css">
+        <link rel="stylesheet" href="./responsive.css">
         <title>CSS Grig</title>
     </head>
     <body>
-            <div class="overlay">
-                    <div class="overlay-inner">
-                      <button class="close">× Close</button>
-                      <img>
-                    </div>
-                  </div>
-                
-                  <section class="gallery">
-                  </section>
-                
-                
-                  <style>
-                    * {
-                      box-sizing: border-box;
-                    }
-                    body {
-                      padding: 50px;
-                      font-family: sans-serif;
-                    }
-                    h1,
-                    h2,
-                    h3,
-                    h4,
-                    h5,
-                    h6 {
-                      margin: 0 0 5px 0;
-                    }
-                    p {
-                      margin: 0 0 20px 0;
-                    }
-                    .close {
-                      background: none;
-                      color: black;
-                      border: 0;
-                    }
+    
+    <div class="wrapper">
+        <div class="top">
+        <header class="hero">
+            <h1>Double Burger</h1>
+            <p>Pretty Good burger!</p>
+        </header>
+        <div class="cta cta1">
+            <p class="price">$1.99</p>
+            <p>Tacos</p>
+        </div>
+        <div class="cta cta2">
+            <p class="price">$3.99</p>
+            <p>Kombucha</p>
+        </div>
 
-                    .gallery {
-                        display: grid;
-                        grid-template-columns: repeat(auto-fill, 100px);
-                        grid-auto-rows: 100px;
-                        grid-auto-flow:  dense;
-                    }
+        </div>
+        <nav class="menu">
+        <button aria-expanded="false" aria-controls="menu-list">
+            <span class="open">☰</span>
+            <span class="close">×</span>
+            Menu
+        </button>
+        <ul id="menu-list">
+            <li>
+            <a href="">Tacos</a>
+            </li>
+            <li>
+            <a href="">Beers</a>
+            </li>
+            <li>
+            <a href="">Wines</a>
+            </li>
+            <li>
+            <a href="">Desserts</a>
+            </li>
+            <li>
+            <a href="">Reservations</a>
+            </li>
+        </ul>
+        </nav>
 
-                    .itm {
-                        overflow: hidden;
-                        display: grid;
-                        grid-template-columns: 1;
-                        grid-template-rows: 1;
-                    }
-                    
-                    .itm img {
-                        grid-column:  1 / -1;
-                        grid-row: 1 / -1;
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                    }
+        <section class="features">
+        <div class="feature">
+            <span class="icon">🌮</span>
+            <h3>Tacos</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+        </div>
+        <div class="feature">
+            <span class="icon">🍺</span>
+            <h3>Beer</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+        </div>
+        <div class="feature">
+            <span class="icon">🍷</span>
+            <h3>Wine</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+        </div>
+        <div class="feature">
+            <span class="icon">🎵</span>
+            <h3>Music</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+        </div>
+        </section>
 
-                    .item__overlay {
-                        background-color: #ffc60032;
-                        grid-column:  1 / -1;
-                        grid-row: 1 / -1;
-                        position: relative;
-                        display: grid;
-                        justify-items: center;
-                        align-items: center;
-                        transition: 0.2s;
-                        transform: translateY(100%);
-                    }
+        <section class="about">
+        <img src="assets/images/burger2.png" alt="Yummy Taco" class="about__mockup">
+        <div class="about__details">
+            <h2>Featured Taco</h2>
+            <p>Slim Profile, easy to hold and loaded with cheese.</p>
+            <p>This is the one you have been waiting for</p>
+            <button>Learn More →</button>
+        </div>
+        </section>
 
-                    .itm:hover  .item__overlay {
-                        transform: translateY(0);
-                    }
 
-                    .item__overlay button {
-                        background-color: none;
-                        border: 2px solid white;
-                        color: white;
-                        text-transform: uppercase;
-                        background: rgba(0, 0, 0, 0.4);
-                        padding: 5px;
-                    }
-                    .itm.v2 {
-                        grid-row: span 2;
-                    }
-   
-                    .itm.v3 {
-                        grid-row: span 3;
-                    }
-   
-                    .itm.v4 {
-                        grid-row: span 4;
-                    }
+        <section class="gallery">
+        <h2>Instant Grams</h2>
+        <img src="https://source.unsplash.com/random/201x201" alt="">
+        <img src="https://source.unsplash.com/random/202x202" alt="">
+        <img src="https://source.unsplash.com/random/203x203" alt="">
+        <img src="https://source.unsplash.com/random/204x204" alt="">
+        <img src="https://source.unsplash.com/random/205x205" alt="">
+        <img src="https://source.unsplash.com/random/206x206" alt="">
+        <img src="https://source.unsplash.com/random/207x207" alt="">
+        <img src="https://source.unsplash.com/random/207x208" alt="">
+        <img src="https://source.unsplash.com/random/207x209" alt="">
+        <img src="https://source.unsplash.com/random/207x210" alt="">
+        </section>
+        
+        
+        <script>
+            const navButton = document.querySelector('button[aria-expanded]');
 
-                    .itm.h2 {
-                        grid-column: span 2;
-                    }
-   
-                    .itm.h3 {
-                        grid-column: span 3;
-                    }
-   
-                    .itm.h4 {
-                        grid-column: span 4;
-                    }
-                    .overlay {
-                      position: fixed;
-                      background: rgba(0, 0, 0, 0.7);
-                      top: 0;
-                      right: 0;
-                      bottom: 0;
-                      left: 0;
-                      display: none;
-                      z-index: 2;
-                    }
-                    .overlay.open {
-                      display: grid;
-                      align-items: center;
-                      justify-items: center;
-                    }
-                    .overlay-inner {
-                      background: white;
-                      width: 700px;
-                      padding: 20px;
-                    }
-                    .overlay img {
-                      width: 100%;
-                    }
-                  </style>
-                
-                  <script>
-                      const gallery = document.querySelector('.gallery');
-                      const overlay = document.querySelector('.overlay');
-                      const overlayImage = document.querySelector('img');
-                      const overlayClose = document.querySelector('.close');
-                    
-                    function generateHTML([h, v]) {
-                        return `
-                            <div class="itm h${h} v${v}">
-                                <img src="assets/images/${randomNumber(12)}.jpg" />
-                                <div class="item__overlay">
-                                    <button>View</button>
-                                </div>
-                            </div>
-                        `;
-                    }
+            function toggleNav({ target }) {
+                const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+                navButton.setAttribute('aria-expanded', !expanded);
+            }
 
-                    function randomNumber(limit) {
-                        return Math.floor(Math.random() * limit) + 1;
-                    }
-                    
-                    function handleClick(e) {
-                        const src  = e.currentTarget.querySelector('img').src;
-                        overlayImage.src = src;
-                        overlay.classList.add('open');
-                    }
-
-                    function close() {
-                        overlay.classList.remove('open');
-                    }
-                    const digits = Array.from({ length: 50 }, () => [randomNumber(4), randomNumber(4)]).concat(
-                        [[1,1], [1,1], [1,1], [1,1], [1,1], [1,1], [1,1], [1,1], [1,1], [1,1], [1,1], [1,1], [1,1], [1,1], [1,1], [1,1],
-                         [1,1], [1,1], [1,1], [1,1], [1,1], [1,1], [1,1], [1,1], [1,1], [1,1], [1,1], [1,1], [1,1], [1,1], [1,1], [1,1], 
-                         [1,1], [1,1], [1,1], [1,1], [1,1], [1,1], [1,1], [1,1], [1,1]]
-                        );
-
-                    const html = digits.map(generateHTML).join('');
-                    gallery.innerHTML = html;
-                
-                    const items = document.querySelectorAll('.itm');
-
-                    items.forEach(item => item.addEventListener('click', handleClick));
-                    overlayClose.addEventListener('click', close);
-                  </script>
-                
+            navButton.addEventListener('click', toggleNav);
+        </script>
     </body>
 </html>
